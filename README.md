@@ -1,6 +1,7 @@
 # EventApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.3.
+Used to learn the ins and outs of Angular 2, and various other technologies
 
 ## Development server
 
