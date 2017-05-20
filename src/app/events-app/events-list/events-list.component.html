@@ -1,0 +1,9 @@
+<div class="container-fluid">
+  <h1> Upcomming Angular 2 Events </h1>
+  <hr>
+  <div class="row">
+    <div class="col-md-5" *ngFor="let event of events">
+       <app-events-thumbnail [event]="event"></app-events-thumbnail>
+      </div>
+    </div>
+</div>

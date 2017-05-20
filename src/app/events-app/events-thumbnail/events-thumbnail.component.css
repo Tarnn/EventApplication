@@ -1,0 +1,27 @@
+.marg-left { 
+    margin-left: 10px;
+}
+
+.well div { 
+    color: #bbb;
+}
+
+.thumbnail {
+    min-height: 210px;
+}
+
+.green {
+    color:   green !important;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.blue {
+    color: blue !important;
+}
+
+.red {
+    color: red !important;
+}
