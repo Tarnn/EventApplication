@@ -10,6 +10,7 @@ import { EventsAppComponent } from './events-app/events-app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 
 import { ToastrService } from './commons/toastr.service';
+import { CollapsibleWellComponent } from './commons/collapsible-well.component';
 import { AuthService } from './user/auth.service';
 
 import { appRoutes } from './routes';
@@ -22,7 +23,9 @@ import { EventsListComponent,
          CreateEventComponent, 
          EventRouteActivator, 
          EventListResolver, 
-         CreateSessionComponent   } from './events-app/index';
+         CreateSessionComponent,
+         SessionListComponent,
+         DurationPipe   } from './events-app/index';
 
 @NgModule({
   declarations: [
@@ -34,7 +37,10 @@ import { EventsListComponent,
     EventDetailsComponent,
     CreateEventComponent,
     Error404Component,
-    CreateSessionComponent
+    CreateSessionComponent,
+    SessionListComponent,
+    CollapsibleWellComponent,
+    DurationPipe
   ],
   imports: [
     BrowserModule,

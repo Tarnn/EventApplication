@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { EventService } from '../shared/event.service';
-
+import { ToastrService } from '../../commons/toastr.service';
 @Component({
   selector: 'app-create-event',
   templateUrl: './create-event.component.html',
@@ -12,7 +12,8 @@ export class CreateEventComponent implements OnInit {
 
   
   constructor(private route: Router,
-              private eventService: EventService) { }
+              private eventService: EventService,
+              private toastr: ToastrService) { }
 
   ngOnInit() {
      
@@ -24,7 +25,8 @@ export class CreateEventComponent implements OnInit {
   
   saveEventEntry(formValues){
     this.eventService.saveEvent(formValues);
-    this.route.navigate(['/events']);
+    this.toastr.success('Event Added!');
     // this.isDirty = false;
+    this.route.navigate(['/events']);
   }
 }
